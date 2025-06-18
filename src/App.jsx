@@ -1,15 +1,15 @@
 import Hero from './components/Hero'
 import Header from './components/header'
 import './App.css'
-import { main } from 'framer-motion/client'
-import AboutMe from './components/AboutMe'
-import TecnologiaCard from './components/TecnologiaCard'
 import Tecnologias from './components/Tecnologias'
+import ProyectosSeccion from './components/ProyectosSeccion'
+import ContactoSeccion from './components/ContactoSeccion'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
   return (
-    <main>
+    <main className='bg-gray-950 text-white'>
       <div className="flex flex-col h-screen">
         <Header />
         <div className="flex-grow">
@@ -18,10 +18,11 @@ function App() {
       </div>
 
       <section className=''>
-        <AboutMe />
-
         <Tecnologias />
+        <ProyectosSeccion />
+        <ContactoSeccion />
       </section>
+      <ToastContainer />
     </main>
   )
 }

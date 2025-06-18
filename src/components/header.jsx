@@ -6,26 +6,26 @@ function Header() {
         setActivePage(page);
     };
     return (
-        <header className="flex items-center h-28" >
-            <nav className="w-1/4 mx-auto border-[0.5px] border-gray-500 px-6 rounded-4xl">
+        <header className="flex items-center pt-3" >
+            <nav className="w-1/4 mx-auto px-3 rounded-4xl">
                 <ul className="flex justify-between items-center p-4 text-white">
                     <li
-                        className={`cursor-pointer ${activePage === "Home" ? "text-orange-500 font-bold" : ""}`}
+                        className={`cursor-pointer ${activePage === "Home" ? "text-cyan-400 font-bold" : ""}`}
                         onClick={() => handlePageChange("Home")}
                     >
-                        Home
+                        Inicio
                     </li>
                     <li
-                        className={`cursor-pointer ${activePage === "Resume" ? "text-orange-500 font-bold" : ""}`}
+                        className={`cursor-pointer ${activePage === "Resume" ? "text-cyan-400 font-bold" : ""}`}
                         onClick={() => handlePageChange("Resume")}
                     >
                         Resume
                     </li>
                     <li
-                        className={`cursor-pointer ${activePage === "Contact" ? "text-orange-500 font-bold" : ""}`}
+                        className={`cursor-pointer ${activePage === "Contact" ? "text-cyan-400 font-bold" : ""}`}
                         onClick={() => handlePageChange("Contact")}
                     >
-                        Contact
+                        Contacto
                     </li>
                 </ul>
             </nav>
